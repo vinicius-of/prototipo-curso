@@ -1,5 +1,5 @@
 <script>
-    import Item from './Carousel_Item.svelte';
+    import Prices from './Price_item.svelte';
 
     const itemList = [
         false,
@@ -13,7 +13,7 @@
     <p>Sabe quando você pode começar? <strong>Agora!</strong></p>
     <ul class="carousel">
         {#each itemList as item}
-             <li><Item selected={item} /></li>
+             <li><Prices selected={item} /></li>
         {/each}
     </ul>
 </main>
@@ -24,8 +24,9 @@
     }
 
     p {
-        font-size: 30px;
-        display: block;
+        font-style: normal;
+        font-size: 72px;
+        line-height: 86px;
         text-align: center;
     }
 

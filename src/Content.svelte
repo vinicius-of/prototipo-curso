@@ -1,33 +1,31 @@
-<script></script>
-
 <main>
     <div class="showup">
         <div class="title-content">
             <h1>Cursinhos da Ordem dos Advogados do Brasil e diversas outras áreas</h1>
-            <p>Venha para o local que mais aprova candidadtos no Brasil!</p>
+            <p>Venha para o local que mais aprova candidatos no Brasil!</p>
             <a href="#">Comece a estudar agora</a>
         </div>
         <div class="image-content">
-            <img src="#" alt="Imagem: Pedir ao Matheus pela imagem">
+            <img src="./assets/apresentacao.png" alt="Imagem de aprensentação">
         </div>
     </div>
     
     <h3>Mais procurados</h3>
     <ul class="content-boxes">
-        <li><div>1</div></li>
-        <li><div>2</div></li>
-        <li><div>3</div></li>
-        <li><div>4</div></li>
-        <li><div>5</div></li>
-        <li><div>6</div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
+        <li><div></div></li>
     </ul>
 </main>
 
 <style>
     main {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
+        /* padding-left: 208px; */
+        max-width: 1522px;
+        margin: 0 208px;
     }
 
     a:hover {
@@ -39,11 +37,34 @@
         color: white;
     }
 
+    img {
+        position: absolute;
+        width: 1364.5px;
+        height: 798.5px;
+        left: 557.5px;
+        top: 0px;
+        z-index: -1;
+    }
+
     .showup {
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        margin-bottom: 200px;
+        display: block;
+        margin-bottom: 323px;
+    }
+
+    .title-content > h1{
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 58px;
+        max-width: 965px;
+    }
+
+    .title-content > p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;  
+        color: #A6A6A6;
+        margin-bottom: 34px;
     }
 
     .title-content > a {
@@ -51,20 +72,19 @@
         border: none;
         border-radius: 5px;
         color: white;
-        font-size: 20px;
-        padding: 10px 2.5rem;
-    }
-
-    .title-content > p {
-        color: #b1b3b2;
+        font-size: 28px;
+        padding: 17px 75px;
     }
 
     h3 {
-        color: red;   
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 43px;
+        color: #E84A5F; 
     }
 
     .content-boxes {
-        margin: 0;
         padding: 0;
         display: flex;
         justify-content: space-between;
@@ -77,11 +97,10 @@
     }
 
     .content-boxes > li {
-        background-color: rgb(155, 155, 155);
-        width: 30%;
-        height: 150px;
-        border: 1px solid black;
+        background-color: #C4C4C4;
+        width: 477px;
+        height: 224px;
         text-align: center;
-        margin-block-end: 10px;
+        margin-block-end: 27px;
     }
 </style>

@@ -2,12 +2,12 @@
     <nav>
         <div>
             <ul>
-                <li><div id="logo">Logo</div></li>
+                <li><h1 id="logo">Logo</h1></li>
                 <li><a href="#">Como funciona</a></li>
                 <li><a href="#">Planos</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-            <ul>
+            <ul id="matricula">
                 <li><a href="#">Entrar</a></li>
                 <li><a href="#" id="btn-matricula">Matricular-se</a></li>
             </ul>
@@ -18,35 +18,38 @@
 <style>
 
     * {
-        font-size: 20px;
+        font-size: 28px;
         padding: 0;
-    }
-    nav {
-        background-color: aliceblue;
     }
 
     nav > div {
-        max-width: 1200px;
+        padding-left: 208px;
+        padding-right: 168px;
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        align-items: center;
         margin: 0 auto;
     }
 
     ul {
         display: flex;
-        justify-content: space-around;
         align-items: center;
     }
 
     li {
         list-style: none;
-        margin: 0 8px;
+        margin-right: 63px;
     }
 
     #logo {
-        font-size: 30px;
-        margin-right: 15px;
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 75px;
+
+        margin-right: 94px;
     }
 
     a, a:focus, a:hover {
@@ -57,8 +60,9 @@
     #btn-matricula {
         background-color: #e84a61;
         border-radius: 5px;
-        padding: 10px;
         color: white;
+        font-size: 28px;
+        padding: 17px;
     }
     
 </style>

@@ -20,9 +20,25 @@
         padding: 0;
     }
 
+    h2 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
     img {
-        width: 200px;
+        width: 309.76px;
+        height: 309.76px;
         border-radius: 100%;
+        background-blend-mode: normal;
     }
 
     .profile {

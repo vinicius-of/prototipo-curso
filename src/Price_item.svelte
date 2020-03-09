@@ -10,9 +10,9 @@
 
     .item {
         background-color: white;
-        width: 325px;
-        height: 500px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.308);
+        width: 643px;
+        height: 1051px;
+        box-shadow: 0px 4px 74px rgba(0, 0, 0, 0.25);
         
     }
 

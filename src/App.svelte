@@ -2,14 +2,14 @@
     import Navbar from './Navbar.svelte'
     import Content from './Content.svelte'
     import Team from './Team.svelte'
-    import Carousel from './Carousel.svelte'
+    import Prices from './Prices.svelte'
 </script>
 
 <main>
     <Navbar />
     <Content />
     <Team />
-    <Carousel />
+    <Prices />
 </main>
 
 <style>
