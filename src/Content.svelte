@@ -4,8 +4,9 @@
             <h1>Cursinhos da Ordem dos Advogados do Brasil e diversas outras áreas</h1>
             <p>Venha para o local que mais aprova candidatos no Brasil!</p>
             <a href="estudar">Comece a estudar agora</a>
+            
         </div>
-        <div class="image-content">
+        <div class="image-container">
             <img src="./assets/apresentacao.png" alt="Imagem de aprensentação">
         </div>
     </div>
@@ -23,7 +24,6 @@
 
 <style>
     main {
-        /* padding-left: 208px; */
         max-width: 1522px;
         margin: 0 208px;
     }
@@ -43,12 +43,16 @@
         left: 30%;
         top: 0px;
         z-index: -1;
-        overflow-x: hidden;
+        
     }
 
     .showup {
         display: block;
         margin-bottom: 380px;
+    }
+
+    .image-container {
+        overflow: hidden;
     }
 
     .title-content > h1{
