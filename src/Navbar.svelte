@@ -3,13 +3,13 @@
         <div>
             <ul>
                 <li><h1 id="logo">Logo</h1></li>
-                <li><a href="#">Como funciona</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="1">Como funciona</a></li>
+                <li><a href="2">Planos</a></li>
+                <li><a href="3">Contato</a></li>
             </ul>
             <ul id="matricula">
-                <li><a href="#">Entrar</a></li>
-                <li><a href="#" id="btn-matricula">Matricular-se</a></li>
+                <li><a href="4">Entrar</a></li>
+                <li><a href="5" id="btn-matricula">Matricular-se</a></li>
             </ul>
         </div>
     </nav>

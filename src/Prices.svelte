@@ -9,12 +9,16 @@
 
 </script>
 
+            <!-- {#each itemList as item}
+                <li><Prices selected={item} /></li>
+            {/each} -->
+
 <main>
     <p>Sabe quando você pode começar? <strong>Agora!</strong></p>
     <ul class="carousel">
-        {#each itemList as item}
-             <li><Prices selected={item} /></li>
-        {/each}
+        <li><Prices /></li>
+        <li><Prices selected={true} /></li>
+        <li><Prices /></li>
     </ul>
 </main>
 
@@ -34,12 +38,17 @@
     .carousel {
         padding: 0;
 
+        position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
 
+        /* display: flex;
+        justify-content: space-around;
+        align-items: center;
+
         display: -ms-flexbox;
-        display: -webkit-flex;
+        display: -webkit-flex; */
     }
 
 </style>
