@@ -28,13 +28,14 @@
         font-size: 72px;
         line-height: 86px;
         text-align: center;
+        margin: 113px 0; 
     }
 
     .carousel {
         padding: 0;
 
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
 
         display: -ms-flexbox;

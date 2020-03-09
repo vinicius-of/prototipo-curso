@@ -10,15 +10,19 @@
 
     .item {
         background-color: white;
-        width: 643px;
-        height: 1051px;
+        width: 588px;
+        height: 962px;
         box-shadow: 0px 4px 74px rgba(0, 0, 0, 0.25);
         
     }
 
     .selected {
-        z-index: 10;
-        border-block-start: 8px solid #e84b60;
+        position: absolute;
+        width: 643px;
+        height: 1051px;
+        left: 643px;
+        top: 2840px;
+        border-block-start: 8px solid #E84A5F;
     }
 
 </style>

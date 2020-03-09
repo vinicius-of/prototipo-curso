@@ -20,11 +20,13 @@
     * {
         font-size: 28px;
         padding: 0;
+        white-space: nowrap;
     }
 
     nav > div {
         padding-left: 208px;
         padding-right: 168px;
+        
         display: flex;
         justify-content: space-between;
         align-items: center;

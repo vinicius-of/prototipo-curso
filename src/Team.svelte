@@ -35,7 +35,6 @@
     .team-list {
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
         max-width: 1278.99px;
 
@@ -45,12 +44,10 @@
         margin: 0 auto;
 
         padding: 0;
-        /* margin-inline-end: 174.85px; */
     }
 
     li {
         list-style: none;
         padding: 0 50px;
-
     }
 </style>

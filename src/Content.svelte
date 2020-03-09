@@ -34,21 +34,21 @@
 
     li {
         list-style: none;
-        color: white;
     }
 
     img {
         position: absolute;
         width: 1364.5px;
         height: 798.5px;
-        left: 557.5px;
+        left: 30%;
         top: 0px;
         z-index: -1;
+        overflow-x: hidden;
     }
 
     .showup {
         display: block;
-        margin-bottom: 323px;
+        margin-bottom: 380px;
     }
 
     .title-content > h1{
@@ -59,10 +59,7 @@
     }
 
     .title-content > p {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 36px;  
+        font-size: 30px;  
         color: #A6A6A6;
         margin-bottom: 34px;
     }
@@ -74,6 +71,7 @@
         color: white;
         font-size: 28px;
         padding: 17px 75px;
+        white-space: nowrap;
     }
 
     h3 {
