@@ -4,7 +4,7 @@
 
 <main>
     <h1>Time</h1>
-    <ul>
+    <ul class="team-list">
         <li><Profile name={'Barros'} title={'Professor Dr. Ufal'} image={"./assets/placeholder-perfil.jpg"} /></li>
         <li><Profile name={'Barros'} title={'Professor Dr. Ufal'} image={"./assets/placeholder-perfil.jpg"} /></li>
         <li><Profile name={'Barros'} title={'Professor Dr. Ufal'} image={"./assets/placeholder-perfil.jpg"} /></li>
@@ -27,7 +27,7 @@
         padding: 30px 0;
     }
 
-    ul {
+    .team-list {
         display: flex;
         justify-content: space-around;
         align-items: center;
