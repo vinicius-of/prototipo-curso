@@ -9,16 +9,12 @@
 
 </script>
 
-            <!-- {#each itemList as item}
-                <li><Prices selected={item} /></li>
-            {/each} -->
-
 <main>
     <p>Sabe quando você pode começar? <strong>Agora!</strong></p>
     <ul class="carousel">
-        <li><Prices /></li>
-        <li><Prices selected={true} /></li>
-        <li><Prices /></li>
+        {#each itemList as item}
+            <li><Prices selected={item} /></li>
+        {/each}
     </ul>
 </main>
 
