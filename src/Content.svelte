@@ -3,7 +3,7 @@
         <div class="title-content">
             <h1>Cursinhos da Ordem dos Advogados do Brasil e diversas outras áreas</h1>
             <p>Venha para o local que mais aprova candidatos no Brasil!</p>
-            <a href="estudar">Comece a estudar agora</a>
+            <a href="#">Comece a estudar agora</a>
             
         </div>
         <div class="image-container">
