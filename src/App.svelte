@@ -1,15 +1,23 @@
 <script>
-    import Navbar from './Navbar.svelte'
-    import Content from './Content.svelte'
-    import Team from './Team.svelte'
-    import Prices from './Prices.svelte'
+    import Home from './Home.svelte'
+    import Video from './Videoplayer.svelte'
+
+    import { Router, Link, Route } from "svelte-routing";
+
+    export let url = "";
 </script>
 
 <main>
-    <Navbar />
-    <Content />
-    <Team />
-    <Prices />
+    <Router url="{url}">
+        <nav>
+            <Link to="/">Home</Link>
+            <Link to="video">Video</Link>
+        </nav>
+        <div>
+            <Route path="/"><Home /></Route>
+            <Route path="video"><Video /></Route>
+        </div>
+    </Router>
 </main>
 
 <style>
