@@ -4,31 +4,33 @@
     export let poster;
     export let src;
 
+    let videoContainer
     let paused = true;
     let time = 0;
     let duration;
 
     let showControls = true;
     let showControlsTimeout;
+    let fullscreenState = false;
 
     function handleMouseMove(e) {
         clearTimeout(showControlsTimeout);
         showControlsTimeout = setTimeout(() => showControls = false, 2500);
-        showControls = true
+        showControls = true;
 
         if(!(e.buttons & 1)) return; // Verificando se o botão está sendo segurado
         if(!duration) return; // Se o vídeo não tiver sido carregado, não será possivel reproduzir o vídeo
 
         const {left, right} = this.getBoundingClientRect();
-        time = duration * (e.clientX - left) / (right - left)
+        time = duration * (e.clientX - left) / (right - left);
     }
-
+    
     function handleProgressBar(e){
         if(!(e.buttons & 1)) return; // Verificando se o botão está sendo segurado
         if(!duration) return; // Se o vídeo não tiver sido carregado, não será possivel reproduzir o vídeo
 
         const {left, right} = this.getBoundingClientRect();
-        time = duration * (e.clientX - left) / (right - left)
+        time = duration * (e.clientX - left) / (right - left);
     }
 
     function handleMouseDown(e){
@@ -52,22 +54,35 @@
 
         const minutes = Math.floor(seconds / 60);
         const hours = Math.floor(minutes / 60);
-        seconds = Math.floor(seconds % 60)
+        seconds = Math.floor(seconds % 60);
 
-        if(hours) return `${hours}:${minutes}:${seconds}`;
-        else return `${minutes}:${seconds}`;
+        const stringSeconds = seconds > 9 ? seconds : `0${seconds}`
+
+        if(hours) return `${hours}:${minutes}:${stringSeconds}`;
+        else return `${minutes}:${stringSeconds}`;
     }
 
     function handlePlayPause(e){
         paused = !paused;
     }
 
+    function handleClickFullscreen() {
+        if(!fullscreenState) {
+            videoContainer.requestFullscreen();
+            fullscreenState = true
+        }
+
+        else {
+            document.exitFullscreen();
+            fullscreenState = false
+        }
+    }
 </script>
 
 <main>
     <Navbar/>
     <div class="container">
-        <div class="c-video">
+        <div class="c-video" bind:this={videoContainer}>
             <video
             poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg"
 	        src="https://sveltejs.github.io/assets/caminandes-llamigos.mp4"
@@ -79,7 +94,9 @@
             ></video>
             <div class="controls" style="opacity: {duration && showControls ? 1 : 0}">
                 
-                <progress value="{(time / duration) || 0}" on:mousemove={handleProgressBar}/>
+                <progress value="{(time / duration) || 0}" 
+                on:mousemove={handleProgressBar}
+                />
 
                 <div class="buttons">
                     <div>
@@ -95,7 +112,10 @@
                     <div>
                         <span class="time"></span>
                         <button id="btn-options"><i class="material-icons">settings</i></button>
-                        <button id="btn-fullscreen"><i class="material-icons">fullscreen</i></button>
+                        <button id="btn-fullscreen"  
+                        on:click={handleClickFullscreen}>
+                            <i class="material-icons">fullscreen</i>
+                        </button>
                     </div>
                 </div>
 

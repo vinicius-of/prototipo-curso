@@ -1,8 +1,8 @@
 <main>
     <nav>
         <div>
+            <h1 id="logo">Logo</h1>
             <ul>
-                <li><h1 id="logo">Logo</h1></li>
                 <li><a href="#">Como funciona</a></li>
                 <li><a href="#">Planos</a></li>
                 <li><a href="#">Contato</a></li>
@@ -65,6 +65,6 @@
         color: white;
         font-size: 28px;
         padding: 17px;
-    }
+    } 
     
 </style>
