@@ -79,7 +79,7 @@
     }
 </script>
 
-<main>
+<section>
     <Navbar/>
     <div class="container">
         <div class="c-video" bind:this={videoContainer}>
@@ -122,7 +122,7 @@
             </div>
         </div>
     </div>
-</main>
+</section>
 
 <style>
 
@@ -138,6 +138,10 @@
         opacity: 0.6;
         -webkit-appearance: none;
 		appearance: none;
+    }
+
+    video {
+        width: 100%;
     }
 
     progress::-webkit-progress-bar {
@@ -156,10 +160,6 @@
 
     .c-video {
         position: relative;
-    }
-
-    video {
-        width: 100%;
     }
 
     .controls {
@@ -206,16 +206,6 @@
         color: white;
         padding: 5px;
         height: 100%;
-    }
-
-    .time-bar {
-        display: block;
-        width: 100%;
-        height: 5px;
-        opacity: 0.6;
-        -webkit-appearance: none;
-		appearance: none;
-        outline: none;
     }
 
     #btn-fullscreen:focus {

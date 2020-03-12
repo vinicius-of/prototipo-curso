@@ -1,0 +1,35 @@
+Navbar
+	font-size: 25px
+
+Bot�o de matricula
+	padding: 12px
+
+Apresenta��o do site
+	margin-top: 125px
+
+Caixas dos cursos
+	margin: 14px;
+
+Titulo do time
+	padding: 30px 0;
+	font-size: 40px
+
+Nome do perfil do professor
+	font-size: 35px
+
+Titulo do perfil do professor
+	font-size: 20px
+
+Tamanho da imagem
+	200px por 200px
+
+Preços
+	padding: 0 15%;
+
+	Titulo do Preço
+		font-size: 40px
+		margin: 65px 0;
+
+	Preço do Item
+		Não selecionado: 350px X 640px
+		Selecionado: 450px X 700px

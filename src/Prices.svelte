@@ -9,14 +9,14 @@
 
 </script>
 
-<main>
+<section>
     <p>Sabe quando você pode começar? <strong>Agora!</strong></p>
     <ul class="carousel">
         {#each itemList as item}
             <li><Prices selected={item} /></li>
         {/each}
     </ul>
-</main>
+</section>
 
 <style>
     li {
@@ -25,26 +25,26 @@
 
     p {
         font-style: normal;
-        font-size: 72px;
+        font-size: 40px;
         line-height: 86px;
         text-align: center;
-        margin: 113px 0; 
+        margin: 65px 50px; 
     }
 
     .carousel {
-        padding: 0;
+        padding: 0 15%;
+        margin-bottom: 100px; 
 
         position: relative;
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
 
-        /* display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        display: -ms-flexbox;
-        display: -webkit-flex; */
+    @media only screen and (max-width: 745px) {
+        .carousel {
+            flex-wrap: wrap;
+        }
     }
 
 </style>

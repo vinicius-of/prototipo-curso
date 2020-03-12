@@ -1,17 +1,20 @@
-<main>
+<script>
+    import {Link, Route, Router} from 'svelte-routing';
+    import Video from './Videoplayer.svelte';
+
+    let url = "";
+</script>
+
+<section>
     <div class="showup">
         <div class="title-content">
             <h1>Cursinhos da Ordem dos Advogados do Brasil e diversas outras áreas</h1>
             <p>Venha para o local que mais aprova candidatos no Brasil!</p>
-            <a href="#">Comece a estudar agora</a>
-            
-        </div>
-        <div class="image-container">
-            <img src="./assets/apresentacao.png" alt="Imagem de aprensentação">
+            <button>Comece a estudar agora</button>
         </div>
     </div>
     
-    <h3>Mais procurados</h3>
+    <h3 class="title">Mais procurados</h3>
     <ul class="content-boxes">
         <li><div></div></li>
         <li><div></div></li>
@@ -20,12 +23,12 @@
         <li><div></div></li>
         <li><div></div></li>
     </ul>
-</main>
+</section>
 
 <style>
-    main {
-        max-width: 1522px;
-        margin: 0 208px;
+    section {
+        max-width: 80%;
+        margin: 0 auto;
     }
 
     a:hover {
@@ -36,30 +39,26 @@
         list-style: none;
     }
 
-    img {
-        position: absolute;
-        width: 1364.5px;
-        height: 798.5px;
-        left: 30%;
-        top: 0px;
-        z-index: -1;
-        
+     .title {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 43px;
+        color: #E84A5F; 
     }
 
-    .showup {
-        display: block;
+    .title-content {
         margin-bottom: 380px;
     }
 
-    .image-container {
-        overflow: hidden;
-    }
 
     .title-content > h1{
         font-weight: 500;
         font-size: 48px;
         line-height: 58px;
         max-width: 965px;
+
+        margin-top: 125px;
     }
 
     .title-content > p {
@@ -68,28 +67,25 @@
         margin-bottom: 34px;
     }
 
-    .title-content > a {
+    .title-content > button {
         background-color: #e84a61;
         border: none;
         border-radius: 5px;
         color: white;
         font-size: 28px;
         padding: 17px 75px;
-        white-space: nowrap;
+        cursor: pointer;
     }
 
-    h3 {
-        font-style: normal;
-        font-weight: 900;
-        font-size: 36px;
-        line-height: 43px;
-        color: #E84A5F; 
-    }
+    /* .title {
+        width: 100%;
+        text-align: center;
+    } */
 
     .content-boxes {
         padding: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
 
@@ -100,9 +96,21 @@
 
     .content-boxes > li {
         background-color: #C4C4C4;
-        width: 477px;
+        max-width: 477px;
+        width: 100%;
         height: 224px;
         text-align: center;
-        margin-block-end: 27px;
+        margin: 14px;
     }
+
+    @media only screen and (max-width: 1279px) {
+        .title {
+            text-align: center;
+        }
+
+        .content-boxes {
+            justify-content: center;
+        }
+    }
+
 </style>

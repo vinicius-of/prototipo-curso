@@ -1,25 +1,44 @@
 <script>
-    import Home from './Home.svelte'
-    import Video from './Videoplayer.svelte'
-
-    import { Router, Link, Route } from "svelte-routing";
-
-    export let url = "";
+    import Navbar from './Navbar.svelte'
+    import Content from './Content.svelte'
+    import Team from './Team.svelte'
+    import Prices from './Prices.svelte'
 </script>
 
 <main>
-    <Router url="{url}">
-        <nav>
-            <Link to="/">Home</Link>
-            <Link to="video">Video</Link>
-        </nav>
-        <div>
-            <Route path="/"><Home /></Route>
-            <Route path="video"><Video /></Route>
-        </div>
-    </Router>
+    <div>
+        <Navbar />
+        <Content />
+        <Team />
+        <Prices />
+    </div>
 </main>
 
 <style>
-	
+    /* Background image*/
+
+    div {
+        background: url('../assets/apresentacao.png') no-repeat right top;
+        background-size: 80%;
+    }
+
+	@media only screen and (max-width: 1764px) {
+        div {
+            background-position-x: 105%;
+            background-position-y: 100px;
+        }
+    }
+
+    @media only screen and (max-width: 1500px) {
+        div {
+            background-position-y: 250px;
+        }
+    }
+
+    @media only screen and (max-width: 1195px) {
+        div {
+            background: none;
+        }
+    }
+
 </style>
